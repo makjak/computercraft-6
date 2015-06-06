@@ -1,3 +1,3 @@
 # computercraft
 
-[section]: http://www.google.com/
+[syntax]: http://www.google.com/
