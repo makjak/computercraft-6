@@ -12,5 +12,6 @@ if term.isColor() then
         paintutils.drawBox(two-thirdX, thirdY, x, two-thirdY)
         
         paintutils.drawBox(0, two-thirdY, thirdX, y, color.black)
+        paintutils.drawBox(thirdX, two-third
         term.setBackgroundColor(color.white)
 
