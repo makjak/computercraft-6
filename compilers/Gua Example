@@ -1,0 +1,13 @@
+clear create;
+create <~Type~ "Button";
+create <~Press~
+        #funct_{
+                return y;
+        }
+v function #funct_NULL;
+create ~Press~]> stack[0];+ Runs function
+create ~Press~> VAR_function;+ Loads function to variable
+
+if (true){
+        EXIT "done" "that was Gua"
+}
