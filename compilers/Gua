@@ -14,3 +14,8 @@ local button = {
         y = 0
         
         z = 0
+        
+        img = function(){}
+        
+        imgPressed = function(){}
+}
