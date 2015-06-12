@@ -1,3 +1,3 @@
 # computercraft
 
-[syntax]: http://www.google.com/
+This is my collection of computercraft programs.
