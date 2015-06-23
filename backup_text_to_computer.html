@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+
+function paramGet(param){
+        var text = window.location.search.substring(1);
+        var textArray = text.split("&");
+        for (var i = 0; i < textArray.length; i++){
+                if (textArray[i] == param){
+                        return textArray[i].split("=")[1];
+                }
+        }
+}
+
+function translate(txt, from, to){
+        var txtSplit = txt.split(from);
+        var txtBuild = "";
+        while (txtSplit.length > 0){
+                if (txtSplit.length == 1){
+                        to = ""
+                }
+                txtBuild = txtBuild + txtSplit[0] + to;
+                txtSplit.shift();
+        }
+        return txtBuild;
+}
+
+function getData(txt, value, type){
+        var value = {};
+        var data = txt.split(":" + value + "=")[1];
+        if (data.charAt(0) == "{" && data.charAt(data.length - 1) == "}"){
+                value["root"] = {};
+                
+        }else{
+                return data.split("\n:")[0]
+        }
+}
+
+</script>
+
+</body>
+</html>
