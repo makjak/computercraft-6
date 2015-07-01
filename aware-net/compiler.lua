@@ -5,5 +5,5 @@ function getProperty(text, prop){
 }
 
 function getPropertyText(section, text){
-        return text.split("--[[<" + section + ">")[2].split("END]]--").
+        return text.split("--[[<" + section + ">")[2].split("END]]--")[1], " ", "")
 }
