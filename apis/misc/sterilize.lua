@@ -7,6 +7,9 @@ function fromTableRaw(table)
     end
 end
 
-function base64()
-    --stuff
+function stringToByte(txt)
+    local num = string.byte(txt)
+    local arrayBool = {}
+    for i=byteLength, 1, -1 do
+        arrayBool[i] = 2
 end
