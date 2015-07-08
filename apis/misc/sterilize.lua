@@ -7,10 +7,27 @@ function fromTableRaw(table)
     end
 end
 
-function stringToByte(txt)
+function stringToByte(txt, highValue, mxSize)
+    local mxSize = mxSize or 1000
     local num = string.byte(txt)
-    local arrayBool = {}
     local tmpNum = num
+    
+    local byteLength = -1
+    local min = 1
+    local max = mxSize
+    while min ~= max do
+        if 
+    end
+    byteLength = min
+    
+    local arrayBool = {}
+    
     for i=byteLength, 1, -1 do
-        if math.pow(2, i) > tmpNum
+        if math.pow(2, i) <= tmpNum then
+            tmpNum = tmpNum - math.pow(2, i)
+            arrayBool[i] = true
+        else
+            arrayBool[i] = false
+        end
+    end
 end
