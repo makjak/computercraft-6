@@ -1,1 +1,3 @@
-
+function fromTable(table)
+    
+end
