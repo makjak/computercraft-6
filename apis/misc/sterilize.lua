@@ -10,6 +10,7 @@ end
 function stringToByte(txt)
     local num = string.byte(txt)
     local arrayBool = {}
+    local tmpNum = num
     for i=byteLength, 1, -1 do
-        arrayBool[i] = 2
+        if math.pow(2, i) > tmpNum
 end
