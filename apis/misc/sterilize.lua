@@ -6,3 +6,7 @@ function fromTableRaw(table)
         txt = txt .. key .. ":" .. value .. "\n"
     end
 end
+
+function base64()
+    --stuff
+end
