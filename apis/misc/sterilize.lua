@@ -1,6 +1,9 @@
 function fromTableRaw(table)
     local txt = ""
+    subNum = 1
+    subs = {}
     for k, v in pairs(table) do
+        if 
         key = base64(k)
         value = base64(v)
         txt = txt .. key .. ":" .. value .. "\n"
