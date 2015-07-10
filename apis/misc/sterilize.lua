@@ -30,7 +30,7 @@ function stringToByte(txt, mxSize, f)
             min = max
         end
     end
-    byteLength = min
+    byteLength = max
     
     local arrayBool = {}
     
