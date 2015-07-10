@@ -16,4 +16,8 @@ end
 local dataFile = "/os/programData/pkgs/"
 do
     local file = fs.open(dataFile .. "pkgURLs.data", "r")
+    if not file then
+        print("Creating pkgURLs.data")
+        fs
+    end
     local packageURL = 
