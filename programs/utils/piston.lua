@@ -18,6 +18,8 @@ do
     local file = fs.open(dataFile .. "pkgURLs.data", "r")
     if not file then
         print("Creating pkgURLs.data")
-        fs
+        fs.close(fs.open("pkgURL.data", "w"))
+        print("File pkgURL.data created")
+        print("
     end
     local packageURL = 
