@@ -17,7 +17,12 @@ function stringToByte(txt, mxSize, f)
     local min = 1
     local max = mxSize
     while min ~= max do
-        local halfway = floor(
+        local halfway = floor((min + max) / 2)
+        if math.pow(2, halfway) > num then
+            max = halfway - 1
+        elseif math.pow(2, halfway) < num then
+            min = halfway + 1
+        end
     end
     byteLength = min
     
