@@ -26,6 +26,9 @@ function stringToByte(txt, mxSize, f)
         elseif math.pow(2, halfway) < num then
             min = halfway + 1
         end
+        if abs(min - max) == 1 then
+            min = max
+        end
     end
     byteLength = min
     
