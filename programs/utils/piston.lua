@@ -6,7 +6,8 @@ if usr = %ROOT% then
     installPath = "/usr/pkgs" .. package
 elseif usr ~= string.match(usr, "[%w_-]*") then
     error("User contains invalid characters")
-elseif not fs.isDir("/home/" .. usr)
+elseif not fs.isDir("/home/" .. usr) then
+    error("User does not exist")
 else
     installPath = "/home/" .. usr .. "/bin/pkgs"
 end
