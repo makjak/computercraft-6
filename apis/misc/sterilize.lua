@@ -19,7 +19,7 @@ function numberToByte(num, mxSize, f)
     local min = 1
     local max = mxSize
     while min ~= max do
-        local halfway = f((min + max) / 2)
+        local halfway = f((min + max) / 2 + min)
         if math.pow(2, halfway) > num then
             max = halfway - 1
         elseif math.pow(2, halfway) < num then
