@@ -11,7 +11,7 @@ function fromTableRaw(table)
 end
 
 function numberToByte(num, mxSize, f)
-    local f = f or floor
+    local f = f or math.floor
     local mxSize = mxSize or 1000
     local tmpNum = num
     
