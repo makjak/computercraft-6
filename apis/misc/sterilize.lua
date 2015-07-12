@@ -10,10 +10,9 @@ function fromTableRaw(table)
     end
 end
 
-function stringToByte(txt, mxSize, f)
+function numberToByte(num, mxSize, f)
     local f = f or floor
     local mxSize = mxSize or 1000
-    local num = string.byte(txt)
     local tmpNum = num
     
     local byteLength = -1
