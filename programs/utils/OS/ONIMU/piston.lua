@@ -1,6 +1,6 @@
 tArgs = {...}
-local usr = tArgs[1]
-local package = tArgs[2]
+local package = tArgs[1]
+local usr = tArgs[2] or "%ROOT%"
 local installPath = ""
 
 if usr == "%ROOT%" then
@@ -20,6 +20,6 @@ do
         print("Creating pkgURLs.data")
         fs.close(fs.open("pkgURL.data", "w"))
         print("File pkgURL.data created")
-        print("
+        print("Downloading from database")
     end
     local packageURL = 
