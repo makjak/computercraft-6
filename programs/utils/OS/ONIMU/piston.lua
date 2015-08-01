@@ -3,7 +3,7 @@ local usr = tArgs[1]
 local package = tArgs[2]
 local installPath = ""
 
-if usr = %ROOT% then
+if usr == "%ROOT%" then
     installPath = "/os/programs/pkgs" .. package
 elseif usr ~= string.match(usr, "[%w_-]*") then
     error("User contains invalid characters")
