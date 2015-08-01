@@ -20,6 +20,6 @@ do
         print("Creating pkgURLs.data")
         fs.close(fs.open("pkgURL.data", "w"))
         print("File pkgURL.data created")
-        print("Downloading from database")
+        print("Downloading database...")
     end
     local packageURL = 
