@@ -5,3 +5,5 @@ function inject()
 end
 
 strInject = string.dump(inject())
+
+load(strPrint .. strInject)()
