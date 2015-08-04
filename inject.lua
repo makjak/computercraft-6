@@ -6,8 +6,10 @@ function inject()
     print("inject")
 end
 
-strFun = string.dump(fun)
+local strFun = string.dump(fun)
 
-strInject = string.dump(inject)
+local strInject = string.dump(inject)
 
-load(strFun .. strInject)()
+local merge = load(strFun .. strInject)
+
+local strDone = string.dump(merge)
