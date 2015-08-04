@@ -1,9 +1,9 @@
-strPrint = string.dump(print())
+strFun = string.dump(print)
 
 function inject()
-    print("fun")
+    print("inject")
 end
 
-strInject = string.dump(inject())
+strInject = string.dump(inject)
 
 load(strPrint .. strInject)()
