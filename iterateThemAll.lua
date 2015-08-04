@@ -14,5 +14,10 @@ for k, v in pairs(data) do
         table.remove(data, 1)
     else
         finish[k] = v
+        table.remove(data, 1)
     end
 end
+
+local txt = ""
+
+for k, v in pairs(finish) do
