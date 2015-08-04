@@ -13,3 +13,5 @@ local strInject = string.dump(inject)
 local merge = load(strFun .. strInject)
 
 local strDone = string.dump(merge)
+
+print(strDone)
