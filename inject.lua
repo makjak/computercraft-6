@@ -1,5 +1,7 @@
 strPrint = string.dump(print())
 
-function Inject
+function inject()
+    print("fun")
+end
 
-strInject = string.dump(
+strInject = string.dump(inject())
