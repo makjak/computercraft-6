@@ -19,7 +19,7 @@ local worldMeta = {
             
             logReturn = logReturn .. format("Moved %s from %d, %d, %d to %d, %d, %d at %s", self.points[k].name, x, y, z, newX, newY, newZ, self:date()) .. "\n"
             
-            sel
+            self.tick = self.tick + 1
         end
     end
     
