@@ -1,7 +1,7 @@
 local worldMeta = {
     function date(self)
         return tostring(self.tick)
-    end
+    end,
     
     function passSecond(self)
         local logReturn = ""
@@ -21,7 +21,17 @@ local worldMeta = {
             
             self.tick = self.tick + 1
         end
-    end
+    end,
     
-    tick = 0
+    tick = 0,
+    
+    materials = {
+        hydrogen = {
+            solid = 0,
+            liquid = 0,
+            gas = 0,
+            plasma = 0
+        oxygen
+        water
+    }
 }
