@@ -8,7 +8,7 @@ local worldMeta = {
             local motion = self.points.[k].motion
             local motionX, motionY, motionZ = unpack(motion)
             local newX, newY, newZ = motionX + x, motionY + y, motionZ + z
-            logReturn = logReturn
+            logReturn = logReturn + format("Moved %s
         end
     end
 end
