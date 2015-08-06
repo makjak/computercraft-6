@@ -1,6 +1,6 @@
 local worldMeta = {
     function date(self)
-        return self.tick
+        return tostring(self.tick)
     end
     
     function passSecond(self)
@@ -18,6 +18,8 @@ local worldMeta = {
             local newX, newY, newZ = motionX + x, motionY + y, motionZ + z
             
             logReturn = logReturn .. format("Moved %s from %d, %d, %d to %d, %d, %d at %s", self.points[k].name, x, y, z, newX, newY, newZ, self:date()) .. "\n"
+            
+            sel
         end
     end
     
