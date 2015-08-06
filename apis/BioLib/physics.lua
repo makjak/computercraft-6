@@ -1,4 +1,5 @@
 local worldMeta = {
+    function
     function passSecond(self)
         local logReturn = ""
         for k, v in ipairs(self.points) do
