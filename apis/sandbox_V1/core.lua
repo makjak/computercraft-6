@@ -7,3 +7,6 @@ end
 function deny(t, action, k)
     print("For " .. tostring(t) .. ", " .. action .. "ing index " .. k .. "is not allowed")
 end
+
+local oldRawset = rawset
+local raw G
