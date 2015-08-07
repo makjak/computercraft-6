@@ -1,8 +1,9 @@
-function change(startX, startY, endX, endY, screen, color, alpha)
+function change(startX, startY, endX, endY, screen, color, name)
     local tempScreen = screen
-    for i=startY, endY do
-        for j=startX, endX do
-            screen[j][i]
+    for y=startY, endY do
+        for x=startX, endX do
+            screen[name][x][y] = screen[x][y]
+            screen[x][y]
         end
     end
 end
