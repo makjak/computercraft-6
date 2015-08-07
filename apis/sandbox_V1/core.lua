@@ -9,4 +9,4 @@ function deny(t, action, k)
 end
 
 local oldRawset = rawset
-local raw G
+local rawset = function
