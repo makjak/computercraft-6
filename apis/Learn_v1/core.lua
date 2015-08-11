@@ -1,3 +1,12 @@
+local nodeMeta = {
+    nodeInputs = {},
+    nodeOutputs = {},
+    
+    findInsertSpot = function(t)
+        for k, v in pairs(t) do
+            
+}
+
 local actionMeta = {
     fire = {},
     
