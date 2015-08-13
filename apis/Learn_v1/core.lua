@@ -34,7 +34,9 @@ local nodeMeta = {
             self.ticksStable = 0
             self.holdValue = params["newValue"]
         elseif reason == "Unknown"
-            error("You tried to call setValue() on " .. self.name .. "with no valid reason. You may see unexpected results")
+            if doPrint = 1 then
+                print("You tried to call setValue() on " .. self.name .. "with no valid reason. You may see unexpected results")
+            end
         else
             self.value = params["newValue"]
         end
