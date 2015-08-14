@@ -27,18 +27,20 @@ local nodeMeta = {
         reason = reason or "Unknown"
         
         if reason == "EMP" then
-            self.unstable = 1
+            self.stage = 2
             self.ticksStable = params["ticks"]
         elseif reason == "Hold"
-            self.unstable = 0
+            self.stage = 3
             self.ticksStable = 0
             self.holdValue = params["newValue"]
-        elseif reason == "Unknown"
+        elseif reason == "Reset Stage"
+            self.stage = 1
+        elseif reason == "Basic_IO"
+            self.value = params["newValue"]
+        else
             if doPrint = 1 then
                 print("You tried to call setValue() on " .. self.name .. "with no valid reason. You may see unexpected results")
             end
-        else
-            self.value = params["newValue"]
         end
     end
 }
@@ -79,3 +81,5 @@ function newAction()
     setmetatable(action, actionMeta)
     return action
 end
+
+doPrint = 1
