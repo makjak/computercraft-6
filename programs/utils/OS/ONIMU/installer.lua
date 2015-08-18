@@ -13,4 +13,10 @@ function copyInternet(url, file)
     fs.close(fileHandle)
 end
 
-function githubURL(repository, user, path)
+function githubURL(repository, user, filePath, branch)
+    branch = branch or "master"
+    if string.sub(filePath, 1, 1) == "/" then
+        filePath = string.sub(user, 2)
+    end
+    return format("http://raw.github.com/%s/%s/%s/%s", user, repository, branch, filePath)
+end
