@@ -12,3 +12,5 @@ function copyInternet(url, file)
     fileHandle.write(http)
     fs.close(fileHandle)
 end
+
+function githubURL(respitory, 
