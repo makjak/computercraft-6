@@ -13,4 +13,4 @@ function copyInternet(url, file)
     fs.close(fileHandle)
 end
 
-function githubURL(respitory, 
+function githubURL(repository, user, path)
